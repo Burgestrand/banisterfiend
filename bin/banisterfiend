@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# 
+# 
+begin
+  require 'banisterfiend'
+rescue LoadError
+  require 'rubygems'
+  retry unless defined?(Gem)
+end
+
+puts "Name: #{Banisterfiend::name}"
