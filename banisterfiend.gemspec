@@ -15,4 +15,6 @@ Gem::Specification.new do |s|
   
   s.version     = Banisterfiend::VERSION
   s.platform    = Gem::Platform::RUBY
+  
+  s.add_dependency 'faker'
 end
